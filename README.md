@@ -1,13 +1,12 @@
-# GAMES
-
+# GAMES 
 Взял в идею чето типо базы игрушек
 
 Модели:
 Studio - разработчик.
-Имеет: name, country и game_count
+- Имеет: name, country и game_count
 
 Genre - жанр. У игры он один, просто потому что я очень плохо понимаю эту штуковину с has_many и belongs, даже с гуглом не разобрался.
-Имеет: name
+- Имеет: name
 
 Game - игра.
 - Имеет: title, release_year, studio_id, genre_id
