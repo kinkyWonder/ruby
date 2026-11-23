@@ -10,16 +10,16 @@ Genre - жанр. У игры он один, просто потому что я
 Имеет: name
 
 Game - игра.
-Имеет: title, release_year, studio_id, genre_id
+- Имеет: title, release_year, studio_id, genre_id
 
 Соотвественно полностью изменять можно только игры:
-GET /api/games или GET /api/games/id для конкретной
-POST /api/games
-PATCH /api/games/id
-DELETE /api/games/id
+- GET /api/games или GET /api/games/id для конкретной
+- POST /api/games
+- PATCH /api/games/id
+- DELETE /api/games/id
 
 А на студии и жанры можно только поглазеть:
-GET /api/studios или /api/studios/id
-GET /api/genres или /api/genres/id
+- GET /api/studios или /api/studios/id
+- GET /api/genres или /api/genres/id
 
 Извиняюсь за некрасивый ридми, мне было лень открывать дипсик и просить написать за меня.
