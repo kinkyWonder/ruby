@@ -1,24 +1,25 @@
-# README
+# GAMES
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Взял в идею чето типо базы игрушек
 
-Things you may want to cover:
+Модели:
+Studio - разработчик.
+Имеет: name, country и game_count
 
-* Ruby version
+Genre - жанр. У игры он один, просто потому что я очень плохо понимаю эту штуковину с has_many и belongs, даже с гуглом не разобрался.
+Имеет: name
 
-* System dependencies
+Game - игра.
+Имеет: title, release_year, studio_id, genre_id
 
-* Configuration
+Соотвественно полностью изменять можно только игры:
+GET /api/games или GET /api/games/id для конкретной
+POST /api/games
+PATCH /api/games/id
+DELETE /api/games/id
 
-* Database creation
+А на студии и жанры можно только поглазеть:
+GET /api/studios или /api/studios/id
+GET /api/genres или /api/genres/id
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Извиняюсь за некрасивый ридми, мне было лень открывать дипсик и просить написать за меня.
